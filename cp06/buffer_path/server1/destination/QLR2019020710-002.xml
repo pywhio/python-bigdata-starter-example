@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TicketFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNameSpaceSchemaLocation="TicketFileFormat.xsd">
+  <FileHeader>
+    <informationmodelreference> bank-ticket-V1.1</informationmodelreference>
+    <sitename>QLR</sitename>
+    <begintime>201802071006</begintime>
+    <endtime>201802071008</endtime>
+  </FileHeader>
+  <Measurements>
+    <ObjectType>Ticket</ObjectType>
+    <TicketName>
+      <N i="1">交易序号</N>
+      <N i="2">交易时间</N>
+      <N i="3">交易网点</N>
+      <N i="4">操作员编号</N>
+      <N i="5">客户id</N>
+      <N i="6">客户名称</N>
+      <N i="7">交易类型</N>
+      <N i="8">交易金额</N>
+    </TicketName>
+    <TicketData>
+      <Ticket Id="1">
+        <V i="1">tac-004</V>
+        <V i="2">201802071008</V>
+        <V i="3">QLR</V>
+        <V i="4">op01</V>
+        <V i="5">cu02</V>
+        <V i="6">李四</V>
+        <V i="7">Withdrawal</V>
+        <V i="8">3000</V>
+      </Ticket>
+      <Ticket Id="2">
+        <V i="1">tac-004</V>
+        <V i="2">201802071008</V>
+        <V i="3">QLR</V>
+        <V i="4">op01</V>
+        <V i="5">cu02</V>
+        <V i="6">李四</V>
+        <V i="7">Withdrawal</V>
+        <V i="8">3000</V>
+      </Ticket>
+    </TicketData>
+  </Measurements>
+</TicketFile>
