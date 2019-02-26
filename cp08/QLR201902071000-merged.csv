@@ -1,0 +1,7 @@
+交易序号,交易时间,交易网点,操作员编号,客户id,客户名称,交易类型,交易金额
+tac-001,201802071002 ,QLR,op01,cu01,张三,deposit,1000
+tac-002,201802071004 ,QLR,op01,cu01,张三,deposit,5000
+tac-003,201802071006 ,QLR,op01,cu02,李四,Withdrawal,2000
+tac-004,201802071008 ,QLR,op01,cu02,李四,Withdrawal,3000
+tac-005,201802071010 ,QLR,op02,cu03,王五,deposit,1000
+tac-006,201802071011 ,QLR,op02,cu03,王五,deposit,5000
