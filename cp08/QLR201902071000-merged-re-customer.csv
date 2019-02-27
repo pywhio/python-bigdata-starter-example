@@ -1,4 +1,4 @@
-客户id,交易类型,交易金额
-cu01,deposit,6000
-cu02,Withdrawal,5000
-cu03,deposit,6000
+timescale,客户id,交易类型,交易金额_sum,交易金额_count
+2018020710,cu01,deposit,6000,2
+2018020710,cu02,Withdrawal,5000,2
+2018020710,cu03,deposit,6000,2

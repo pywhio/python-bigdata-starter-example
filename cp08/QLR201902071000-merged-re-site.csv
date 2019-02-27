@@ -1,3 +1,3 @@
-交易网点,交易类型,交易金额
-QLR,Withdrawal,5000
-QLR,deposit,12000
+timescale,交易网点,交易类型,交易金额_sum,交易金额_count
+2018020710,QLR,Withdrawal,5000,2
+2018020710,QLR,deposit,12000,4
