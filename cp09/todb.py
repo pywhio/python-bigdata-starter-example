@@ -1,5 +1,5 @@
 import pandas as pd
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, DateTime
 from reports_cfg import re_cfg, add_timefield, pg_conn_dict
 import sys,traceback
 
@@ -26,6 +26,7 @@ def agg2db(filename):
     dfo = pd.read_csv(filename)
     dfs = report_df(dfo, add_fields=add_timefield, re_cfg=re_cfg)
     for tablename, df in dfs.items():
+        # print(df)
         try:
             df.to_sql(tablename, con=con, if_exists='append')
         except :
