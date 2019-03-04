@@ -24,7 +24,8 @@ def agg_many_tables(tables,date, agg_table_fun, re_day_cfg=re_day_cfg, con = get
 
 def agg_table_pd(source_table, dest_table, date, re_day_cfg, con):
     time_field = re_day_cfg['time_field']
-    df = pd.read_sql_table(source_table,con)
+    sql = "select * from {0} where {1}>='{2:%Y-%m-%d %H:%M}' and {1}<'{3:%Y-%m-%d %H:%M}'".format(source_table,column(time_field),*date)
+    df = pd.read_sql(sql,con)
     df = df[(df[time_field]>=date[0]) & (df[time_field]<date[1])]
     df_agg = df.groupby(re_day_cfg['groupby_fields']).agg(re_day_cfg['agg_fields'])
     df_agg[time_field] = date[0]
