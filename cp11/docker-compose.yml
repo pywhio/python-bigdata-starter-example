@@ -1,0 +1,179 @@
+ftp1:
+  image: stilliard/pure-ftpd:hardened
+  ports:
+    - "21:21"
+    - "30000-30039:30000-30039"
+  expose:
+    - "31000-31039"
+  volumes:
+    - ./ftp:/home/root
+  environment:
+    - FTP_USER_NAME=root
+    - FTP_USER_PASS=p@ssword
+    - FTP_USER_HOME=/home/root
+    - PUBLICHOST=localhost
+    - FTP_MAX_CLIENTS=20
+    - FTP_PASSIVE_PORTS=30000:30039
+  restart: always
+
+ftp2:
+  image: stilliard/pure-ftpd:hardened
+  ports:
+    - "2100:21"
+    - "31000-31039:31000-31039"
+  expose:
+    - "31000-31039"
+  volumes:
+    - ./ftp:/home/root
+  environment:
+    - FTP_USER_NAME=root
+    - FTP_USER_PASS=p@ssword
+    - FTP_USER_HOME=/home/root
+    - PUBLICHOST=localhost
+    - FTP_MAX_CLIENTS=20
+    - FTP_PASSIVE_PORTS=31000:31039
+  restart: always
+
+ftp3:
+  image: stilliard/pure-ftpd:hardened
+  ports:
+    - "2200:21"
+    - "32000-32039:32000-32039"
+  expose:
+    - "32000-32039"
+  volumes:
+    - ./ftp:/home/root
+  environment:
+    - FTP_USER_NAME=root
+    - FTP_USER_PASS=p@ssword
+    - FTP_USER_HOME=/home/root
+    - PUBLICHOST=localhost
+    - FTP_MAX_CLIENTS=20
+    - FTP_PASSIVE_PORTS=32000:32039
+  restart: always
+
+ftp4:
+  image: stilliard/pure-ftpd:hardened
+  ports:
+    - "2300:21"
+    - "33000-33039:33000-33039"
+  expose:
+    - "33000-33039"
+  volumes:
+    - ./ftp:/home/root
+  environment:
+    - FTP_USER_NAME=root
+    - FTP_USER_PASS=p@ssword
+    - FTP_USER_HOME=/home/root
+    - PUBLICHOST=localhost
+    - FTP_MAX_CLIENTS=20
+    - FTP_PASSIVE_PORTS=33000:33039
+  restart: always
+
+ftp5:
+  image: stilliard/pure-ftpd:hardened
+  ports:
+    - "2400:21"
+    - "34000-34039:34000-34039"
+  expose:
+    - "34000-34039"
+  volumes:
+    - ./ftp:/home/root
+  environment:
+    - FTP_USER_NAME=root
+    - FTP_USER_PASS=p@ssword
+    - FTP_USER_HOME=/home/root
+    - PUBLICHOST=localhost
+    - FTP_MAX_CLIENTS=20
+    - FTP_PASSIVE_PORTS=34000:34039
+  restart: always
+
+ftp6:
+  image: stilliard/pure-ftpd:hardened
+  ports:
+    - "2500:21"
+    - "35000-35039:35000-35039"
+  expose:
+    - "35000-35039"
+  volumes:
+    - ./ftp:/home/root
+  environment:
+    - FTP_USER_NAME=root
+    - FTP_USER_PASS=p@ssword
+    - FTP_USER_HOME=/home/root
+    - PUBLICHOST=localhost
+    - FTP_MAX_CLIENTS=20
+    - FTP_PASSIVE_PORTS=35000:35039
+  restart: always
+
+ftp7:
+  image: stilliard/pure-ftpd:hardened
+  ports:
+    - "2600:21"
+    - "36000-36039:36000-36039"
+  expose:
+    - "36000-36039"
+  volumes:
+    - ./ftp:/home/root
+  environment:
+    - FTP_USER_NAME=root
+    - FTP_USER_PASS=p@ssword
+    - FTP_USER_HOME=/home/root
+    - PUBLICHOST=localhost
+    - FTP_MAX_CLIENTS=20
+    - FTP_PASSIVE_PORTS=36000:36039
+  restart: always
+
+ftp8:
+  image: stilliard/pure-ftpd:hardened
+  ports:
+    - "2700:21"
+    - "37000-37039:37000-37039"
+  expose:
+    - "37000-37039"
+  volumes:
+    - ./ftp:/home/root
+  environment:
+    - FTP_USER_NAME=root
+    - FTP_USER_PASS=p@ssword
+    - FTP_USER_HOME=/home/root
+    - PUBLICHOST=localhost
+    - FTP_MAX_CLIENTS=20
+    - FTP_PASSIVE_PORTS=37000:37039
+  restart: always
+
+ftp9:
+  image: stilliard/pure-ftpd:hardened
+  ports:
+    - "2800:21"
+    - "38000-38039:38000-38039"
+  expose:
+    - "38000-38039"
+  volumes:
+    - ./ftp:/home/root
+  environment:
+    - FTP_USER_NAME=root
+    - FTP_USER_PASS=p@ssword
+    - FTP_USER_HOME=/home/root
+    - PUBLICHOST=localhost
+    - FTP_MAX_CLIENTS=20
+    - FTP_PASSIVE_PORTS=38000:38039
+  restart: always
+
+ftp10:
+  image: stilliard/pure-ftpd:hardened
+  ports:
+    - "2900:21"
+    - "39000-39039:39000-39039"
+  expose:
+    - "39000-39039"
+  volumes:
+    - ./ftp:/home/root
+  environment:
+    - FTP_USER_NAME=root
+    - FTP_USER_PASS=p@ssword
+    - FTP_USER_HOME=/home/root
+    - PUBLICHOST=localhost
+    - FTP_MAX_CLIENTS=20
+    - FTP_PASSIVE_PORTS=39000:39039
+  restart: always
